@@ -7,11 +7,18 @@
 </head>
 <body>
     <h1>base page</h1>
+
     <h1>using while loop</h1>
     <input type="number" id="i3" value="" placeholder="enter  a number">
     <input type="number" id="i4" value="" placeholder="enter  a number">
     <button onclick="fun1()">click here</button>
     <p id="p2"></p>
+    <br><br><br>
+    <h2>enter two number for comparison</h2>
+    <input type="number" value="" placeholder="enter first no" id="i1">
+    <input type="number" value="" placeholder="enter second no" id="i2">
+    <button onclick="fun()">click here</button>
+    <p id="p1"></p>
     <script>
         function fun1() {
             var i = document.getElementById("i3").value;
@@ -23,6 +30,21 @@
             }
             document.getElementById("p2").innerHTML = text;
         }
+
+        function fun() {
+            var i = document.getElementById("i1").value;
+            var n = document.getElementById("i2").value;
+            var text = "";
+            for(; i<=n; i++)
+            {
+                text = text + i + "<br>"
+
+            }
+            document.getElementById("p1").innerHTML = text;
+            
+        }
     </script>
+
+>>>>>>> loop
 </body>
 </html>
